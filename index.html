@@ -17,6 +17,16 @@
     <img id="photo" width="250" />
 
     <script src="script.js"></script>
+
+    <button onclick="enviarParaFlutter()">Enviar para Flutter</button>
+
+    <script>
+        function enviarParaFlutter() {
+            const texto = "Olá! Texto enviado da WebView para o Flutter 🚀";
+            NativeApp.postMessage(texto);
+        }
+    </script>
+
 </body>
 
 </html>
